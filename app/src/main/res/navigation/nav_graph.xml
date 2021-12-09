@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.yquery.gdscquizapp.LoginFragment"
+        android:name="com.yquery.gdscquizapp.fragments.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/levelSelectionFragment"
-        android:name="com.yquery.gdscquizapp.LevelSelectionFragment"
+        android:name="com.yquery.gdscquizapp.fragments.LevelSelectionFragment"
         android:label="fragment_level_selection"
         tools:layout="@layout/fragment_level_selection" >
         <argument
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/quizFragment"
-        android:name="com.yquery.gdscquizapp.QuizFragment"
+        android:name="com.yquery.gdscquizapp.fragments.QuizFragment"
         android:label="fragment_quiz"
         tools:layout="@layout/fragment_quiz" >
         <argument

@@ -1,8 +1,9 @@
-package com.yquery.gdscquizapp
+package com.yquery.gdscquizapp.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
+import com.yquery.gdscquizapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
