@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.SeekBar
 import android.widget.TextView
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.slider.Slider
@@ -65,8 +66,14 @@ class LevelSelectionFragment : Fragment() {
             }
 
             openButton!!.setOnClickListener {
-                Toast.makeText(activity, numberOfQuestions.toString(), Toast.LENGTH_SHORT).show()
+//                Toast.makeText(activity, numberOfQuestions.toString(), Toast.LENGTH_SHORT).show()
                 bottomSheet.dismiss()
+
+                findNavController().navigate(
+                    LevelSelectionFragmentDirections.actionLevelSelectionFragmentToQuizFragment(
+                        numberOfQuestions
+                    )
+                )
             }
 
             bottomSheet.show()
