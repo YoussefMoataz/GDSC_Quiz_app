@@ -30,11 +30,13 @@ class QuizFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            Toast.makeText(
-                activity,
-                it.getInt("number_of_questions").toString(),
-                Toast.LENGTH_SHORT
-            ).show()
+//            Toast.makeText(
+//                activity,
+//                it.getInt("number_of_questions").toString(),
+//                Toast.LENGTH_SHORT
+//            ).show()
+
+            activity?.title = "Quiz time"
 
             questions = addQuestions(it.getInt("number_of_questions"))
         }
@@ -117,7 +119,6 @@ class QuizFragment : Fragment() {
 
             userAnswers.add(currentAnswer)
             submitAnswers()
-            Toast.makeText(activity, score.toString(), Toast.LENGTH_SHORT).show()
         }
         answerSelected = false
     }
@@ -134,6 +135,8 @@ class QuizFragment : Fragment() {
 
             counter += 1
         }
+
+        Toast.makeText(activity, score.toString(), Toast.LENGTH_SHORT).show()
 
     }
 
