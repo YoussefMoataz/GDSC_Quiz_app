@@ -34,5 +34,20 @@
         <argument
             android:name="number_of_questions"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_quizFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.yquery.gdscquizapp.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="score"
+            app:argType="integer" />
+        <argument
+            android:name="num_of_questions"
+            app:argType="integer" />
     </fragment>
 </navigation>

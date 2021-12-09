@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.yquery.gdscquizapp.Questions
 import com.yquery.gdscquizapp.R
 import com.yquery.gdscquizapp.databinding.FragmentQuizBinding
@@ -129,14 +129,16 @@ class QuizFragment : Fragment() {
 
         while (counter < userAnswers.size) {
 
-            if (userAnswers[counter] == questions[counter].correctAnswer){
+            if (userAnswers[counter] == questions[counter].correctAnswer) {
                 score += 1
             }
 
             counter += 1
         }
 
-        Toast.makeText(activity, score.toString(), Toast.LENGTH_SHORT).show()
+        findNavController().navigate(
+            QuizFragmentDirections.actionQuizFragmentToResultFragment(score, questions.size)
+        )
 
     }
 

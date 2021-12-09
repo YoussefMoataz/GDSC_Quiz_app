@@ -2,8 +2,8 @@
 <resources>
 
     <style name="Splash" parent="Theme.Material3.Light.NoActionBar">
-        <item name="android:statusBarColor">@color/purple_500</item>
-        <item name="android:windowSplashScreenBackground">@color/purple_500</item>
+        <item name="android:statusBarColor">@color/main_color</item>
+        <item name="android:windowSplashScreenBackground">@color/main_color</item>
         <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash</item>
     </style>
 </resources>
