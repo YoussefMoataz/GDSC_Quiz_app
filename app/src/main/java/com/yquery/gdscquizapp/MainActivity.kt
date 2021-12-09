@@ -7,6 +7,9 @@ import androidx.navigation.fragment.NavHostFragment
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        setTheme(R.style.Theme_GDSCQuizApp)
+
         setContentView(R.layout.activity_main)
 
         val navHostFragment =
