@@ -40,7 +40,7 @@
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
-        android:name="com.yquery.gdscquizapp.ResultFragment"
+        android:name="com.yquery.gdscquizapp.fragments.ResultFragment"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <argument

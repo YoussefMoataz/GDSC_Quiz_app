@@ -1,4 +1,4 @@
-package com.yquery.gdscquizapp
+package com.yquery.gdscquizapp.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
