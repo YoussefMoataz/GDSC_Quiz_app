@@ -51,6 +51,8 @@ class QuizFragment : Fragment() {
 
         setViews(questionNumber)
 
+        binding.progressBar.max = questions.size
+
         binding.nextQuestion.setOnClickListener {
             if (answerSelected) {
                 nextQuestion(currentAnswer)
@@ -103,6 +105,8 @@ class QuizFragment : Fragment() {
         binding.secondAnswer.text = currentQuestion.answer2
         binding.thirdAnswer.text = currentQuestion.answer3
         binding.fourthAnswer.text = currentQuestion.answer4
+
+        binding.progressBar.progress += 1
 
     }
 
